@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  	
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  </head>
+
+<script src=Javascript/games.js></script>
+
+<body>
+
+<secition id="main">
+
+
+<h1>Hangman</h1><br>
+
+</secition>
+
+<div id="container">
+  
+  
+
+
+<div class="left">
+	<h2>All about dogs!</h2>
+	<hr>
+<img src="assets/Images/cutepup.gif" alt="Pup" style="width:200px;height:200px;">
+</div>
+
+
+
+
+
+	
+<div class="right">
+<form name="guessform">
+
+<input name="guesses" type="text" size="3" maxlength="1" onKeyPres="guessfunc()" id="guess">
+</form>
+
+<div id ="dashes"></div>
+
+<div id ="guesses">
+	<h3>Guesses</h3>
+</div>
+<div id ="messages"></div>
+<div id = "trys">
+	<h4>Trys</h4>
+</div>
+<div id="userguess"></div>
+
+<form>
+	<button class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span> Refresh</button>
+	</form>
+	</div>
+	</div>
+
+</div>
+</div>
+
+
+
+
+</body>
+</html>	

@@ -1,0 +1,51 @@
+body {
+ background: purple;
+ text-align: center;
+ margin: 25px;
+
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.container {
+   
+    width: 900px;
+    border: thick;
+    text-align: center;
+    margin: 75px;
+    padding: 25px;
+}
+
+
+}
+
+img {
+    height: auto;
+    width: auto;
+    display:inline;
+}
+
+.left {
+    width: 400px;
+    height: 500px;
+    border: dotted;
+    border-color: white;
+    float: left;
+    
+    margin-left: 100px;
+    text-align: center;
+}
+.right {
+    width: 400px;
+    height: 500px;
+    border: dotted;
+    border-color: white;
+    float: right;
+    margin-right: 100px;
+    text-align: center;
+    vertical-align: cener;
+    padding-top: 75px;
+
