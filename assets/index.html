@@ -18,19 +18,20 @@
 <secition id="main">
 
 
-<h1>Hangman</h1><br>
+<h1>Hangman</h1>
 
 </secition>
 
-<div id="container">
+<div class="container">
   
   
 
 
-<div class="left">
+<div id="left">
 	<h2>All about dogs!</h2>
 	<hr>
-<img src="assets/Images/cutepup.gif" alt="Pup" style="width:200px;height:200px;">
+<p><img src="Images/cutepup.gif" alt="Pup"></p>
+<p><img src="Images/doggies.gif" alt="Doggies"></p>
 </div>
 
 
@@ -38,7 +39,8 @@
 
 
 	
-<div class="right">
+<div id="right">
+<h3>Press any letter to begin"</h3>
 <form name="guessform">
 
 <input name="guesses" type="text" size="3" maxlength="1" onKeyPres="guessfunc()" id="guess">
@@ -47,7 +49,7 @@
 <div id ="dashes"></div>
 
 <div id ="guesses">
-	<h3>Guesses</h3>
+	<h4>Guesses</h4>
 </div>
 <div id ="messages"></div>
 <div id = "trys">
@@ -56,13 +58,15 @@
 <div id="userguess"></div>
 
 <form>
+<div id="bottom">
 	<button class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span> Refresh</button>
+	</div>
 	</form>
 	</div>
 	</div>
 
-</div>
-</div>
+
+
 
 
 
