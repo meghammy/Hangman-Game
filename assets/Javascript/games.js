@@ -15,7 +15,7 @@ var random = Math.floor((Math.random()*(dog.length-1)));
 var word = dog[random];
 
 var wordlength= new Array(word.length);
-var trys = 5; document.getElementById("trys");
+var trys = 10; 
 
 for (var i = 0; i < wordlength.length; i++){
 	wordlength[i] = "_ ";
@@ -39,9 +39,9 @@ var guessfunc = function(){
 	var userguess = b.value;
 	userguess = userguess.toUpperCase();
 
-	for (var i = 0; i < wordlength.length; i++){
-		if(wordlength[i] === userguess){
-			wordlength[i] = userguess("guesses") + " ";
+	for (var i = 0; i < word.length; i++){
+		if(word[i] === userguess){
+			wordlength[i] = userguess + " ";
 			var correct = true;
 			console.log(userguess);
 		}
@@ -56,7 +56,9 @@ var guessfunc = function(){
 		var guesses = document.getElementById("guesses");
 		var letters = document.createTextNode(" " + userguess);
 		guesses.appendChild(letters); 
-		trys --;
+		trys--;
+		var trymessages = document.getElementById("trys");
+		trymessages.innerHTML= trys;
 	}
 
 	var finished = true; 
@@ -67,18 +69,21 @@ var guessfunc = function(){
 	}
 	if(finished){
 		var messages = document.getElementById("messages");
-		var message= document.createTextNode("<p>You Win!</p>");
+		var message= "<h2>You Win!</h2>";
 		messages.innerHTML= message;
+		document.getElementById("guess").disabled = true;
 	}
 
-	if(trys === 10){
+	if(trys === 0){
 		var messages = document.getElementById("messages");
-		var message= document.createTextNode("<p>You Lose!</p>");
+		var message= "<h2>You Lose!</h2>";
 		messages.innerHTML= message;
+		document.getElementById("guess").disabled = true;
 	}
 }
 
 function init(){
+	document.getElementById("guess").focus();
 	printGuesses();
 }
 
